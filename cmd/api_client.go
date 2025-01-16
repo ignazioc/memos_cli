@@ -40,7 +40,7 @@ func post(content string) {
 	req, _ := http.NewRequest("POST", url, bytes.NewBuffer(jsonValue))
 
 	req.Header.Set("Content-Type", "application/json")
-	req.Header.Set("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsImtpZCI6InYxIiwidHlwIjoiSldUIn0.eyJuYW1lIjoiaWduYXppb2MiLCJpc3MiOiJtZW1vcyIsInN1YiI6IjEiLCJhdWQiOlsidXNlci5hY2Nlc3MtdG9rZW4iXSwiaWF0IjoxNzM2OTI1ODU1fQ.XUrIfdS6QiTDMNZ2yz5DwtV6_ISpHTagiPk6ztnhkcM")
+	req.Header.Set("Authorization", "Bearer ")
 
 	res, err := http.DefaultClient.Do(req)
 
